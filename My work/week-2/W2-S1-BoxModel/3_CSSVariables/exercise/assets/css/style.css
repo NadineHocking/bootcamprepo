@@ -1,0 +1,138 @@
+:root {
+    /*Colours*/
+    --primary-color: #d90000;
+    --text-color-reverse: #ffffff;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --card-bg-color: #fff3f3;
+    --card-color: #d90000;
+    --card-heading: #d90000;
+    /* spacing */
+    --box-width: 40%;
+    --box-text-align: center;
+    --box-padding: 20px;
+    --content-padding: 50px;
+    --header-padding:  40px 0;
+    --header-h1-margin: 0;
+    --body-margin: 0;
+    --body-padding: 0;
+    --nav-padding: 15px;
+    --nav-text-align: center;
+    --header-text-align: center;
+    --header-img-width: 100%;
+    --img-width: 100%;
+
+
+    
+}
+
+.dark-mode {
+    --primary-color: #000000;
+    --text-color-reverse: #ffffff;
+    --text-color: #ffffff;
+    --background-color: #333333;
+    --card-bg-color: black;
+    --card-color: white;
+    --card-heading: white;
+}
+
+
+/* Basic Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: var(--body-margin);
+    padding: var(--body-padding);
+    background-color: var(--background-color);
+    /* Hardcoded white */
+    color: var(--text-color);
+    /* Hardcoded black */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-color);
+    /* Hardcoded red */
+    padding: var(--nav-padding);
+    text-align: var(--nav-text-align);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color-reverse);
+    /* Hardcoded white */
+    font-weight: bold;
+}
+
+/* Header Section */
+header {
+    text-align: var(--header-text-align);
+    background-color: var(--primary-color);
+    /* Hardcoded red */
+    color: var(--text-color-reverse);
+    /* Hardcoded white */
+    padding: var(--header-padding);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-image {
+    width: var(--header-img-width);
+    
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--content-padding);
+    background-color: var(--background-color);
+    /* Hardcoded white */
+}
+
+img {
+    max-height:fit-content;
+    width: var(--img-width);
+    
+}
+
+.box {
+    width: var(--box-width);
+    padding: var(--box-padding);
+    background-color: var(--card-bg-color);
+    /* Light red background */
+    border: 2px solid var(--primary-color);
+    /* Hardcoded red border */
+    color: var(--card-color);
+    /* Hardcoded red text */
+    text-align: var(--box-text-align);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: var(--card-heading);
+}
+
+.box p {
+    color: var(--text-color);
+    /* Hardcoded black text */
+}
+
+a.option {
+    color: var(--primary-color);
+    /* Hardcoded red */
+    text-decoration: none;
+    width: 50%;
+}

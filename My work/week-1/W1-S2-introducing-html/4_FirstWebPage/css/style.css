@@ -1,0 +1,10 @@
+.form {
+    width: 100%;
+    display: block;
+}
+
+.form > input[type=text] {
+        border: 2px solid red;
+        border-radius: 8px;
+      
+}

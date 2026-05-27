@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nadine Hocking</h1>
+    <img src="./images/Nadinecartoon.png" alt="Image of Nadine" width="200px" height="auto">
+
+    <h2>About me:</h2>
+    <p>I am a UI/UX designer and aspiring developer with strong foundations in 
+        visual and interactive design, communications and psychology. I begun my career in the industry 15 years ago and during this time I have worked professionally for a variety of small and large businesses, startups and agencies in the UK and internationally on both permanent and freelance bases. 
+        </p>
+    <h2>Contact details: </h2>
+    <p><strong>Email:</strong><a href="mailto:nadinehocking@gmail.com"> nadinehocking@gmail.com</a></p>
+    <form action="submit.php" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email" placeholder="janedoe@gmail.com">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="tel">Tel:</label>
+        <input type="tel" name="tel" id="tel" placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <br/>
+        
+        <input type="radio" id="html" name="design" value="design">
+        <label for="design" checked="checked">I have a design project</label><br>
+        <input type="radio" id="html" name="dev" value="dev">
+        <label for="dev">I have a development project</label><br>
+        <input type="radio" id="html" name="both" value="both">
+        <label for="both">Both</label><br>
+        <br/>
+        <label for="availability">choose availability:</label>
+
+        <select name="availability" id="availability">
+        <option value="mornings">Morning</option>
+        <option value="aftenoon">Afternoon</option>
+        <option value="evening">Evening</option>
+        </select>
+        <br/>
+        <label for="message">Message:</label>
+        <br/>
+        <textarea cols="30" rows="5" name="message" id="message">Leave a message</textarea>
+        <input type="button" value="Submit">
+
+    </form>
+</body>
+</html>
