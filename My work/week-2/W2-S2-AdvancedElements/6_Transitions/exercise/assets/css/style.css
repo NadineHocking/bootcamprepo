@@ -12,7 +12,7 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-
+ 
 header h1 {
     /* Add margin to the top and bottom of the heading */
     margin: 0.5em 0;
@@ -70,3 +70,35 @@ img {
    
     /* Add New styling here */
 }
+
+.spin {
+    transition: transform 0.9s ease-in-out;
+}
+
+.spin:hover {
+    transform: rotate(360deg);
+}
+
+.pulse {
+    transition: transform 0.9s ease-in-out;
+}
+
+
+@keyframes continuous-pulse {
+    0% {
+      transform: scale(1);       /* Normal size */
+    }
+    50% {
+      transform: scale(1.1);     /* Grow to 110% */
+    }
+    100% {
+      transform: scale(1);       /* Return to normal size */
+    }
+  }
+  
+
+  .pulse:hover {
+    animation: continuous-pulse 1.5s ease-in-out infinite;
+  }
+
+

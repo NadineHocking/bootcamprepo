@@ -15,7 +15,7 @@ By completing this exercise, you will:
 ## User Story
 
 As a user, I want to see a form on a web page that dynamically reacts based on my input and interaction. The form should change appearance or behavior based on my focus, input validation, and more, providing a smooth and responsive experience.
-
+ 
 ## Acceptance Criteria
 
 - The form must include the following fields:

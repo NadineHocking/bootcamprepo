@@ -6,9 +6,9 @@ Your client, **Wally's Wellies**, wants to add more interactive features to his 
 
 Your task is to implement **CSS transitions and transformations** to make Wally's Wellies more interactive and animated. You can either use the provided example code or build on your previous work from the **2_BorderStyling** exercise.
 
-## Key Learnings
+## Key Learnings 
 
-By completing this exercise, you will learn:
+By completing this exercise, you will learn: 
 
 - The difference between **CSS transitions** and **CSS transformations**.
 - How to use transitions and transformations to create interactive elements in a real-world web application.
@@ -21,7 +21,7 @@ As a web developer, I want to use CSS transitions and transformations to create 
 ## Acceptance Criteria
 
 ### Animations:
-
+ 
 1. Add a **pulsing effect** to one or more of Wally's Wellies' product boxes.
 
    - The box should smoothly grow and shrink in size using CSS transitions.

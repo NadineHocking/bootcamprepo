@@ -8,13 +8,13 @@
 
 body {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
     color: #333;
 }
 
 /* Navigation */
 .main-nav {
-    
+    position: sticky;
     top: 0;
     background-color: #333;
     color: white;
@@ -64,6 +64,10 @@ body {
     height: auto;
 }
 
+main {
+    height: 100%;
+}
+
 /* Action Boxes */
 .action-boxes {
     display: flex;
@@ -95,6 +99,11 @@ footer {
 .get-in-touch {
     /* TODO need to fix this to bottom and right */
 
+    position: fixed;
+    bottom: -7px;
+    right: 0px;
+    z-index: 500;
+    border-radius: 30px;
     /* Incorrect position */
     
 }
@@ -102,6 +111,7 @@ footer {
 .get-in-touch img {
     width: 150px;
     height: auto;
+   
 }
 
 /* TASK 1: Make the navigation sticky at the top */
