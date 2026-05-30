@@ -10,8 +10,8 @@
   }
 
   .intro-text {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
   h1 {
@@ -37,6 +37,7 @@
 
   .d-list {
     padding: 0;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     list-style-type: none;
     text-align: center;
@@ -98,6 +99,8 @@
     --btn-primary-outline-bg: 1px solid #000000;
     --btn-primary-bg:#000000;
     --text-color: #000000;
+    --box-bg: rgba(255, 255, 255, 0.3);
+    --box-outline: 1px solid white;
 }
 
 /* Containers */
@@ -108,7 +111,8 @@
 }
 
 .info-box {
-    border: var(--btn-primary-outline-bg);
+    background: var(--box-bg);
+    border: var(--box-outline);
     border-radius: 30px;
     padding: 20px;
     margin-right: 10px;
