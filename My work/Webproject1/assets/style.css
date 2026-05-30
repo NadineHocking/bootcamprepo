@@ -110,12 +110,20 @@
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .container {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+  }
+}
+
 .info-box {
     background: var(--box-bg);
     border: var(--box-outline);
     border-radius: 30px;
     padding: 20px;
-    margin-right: 10px;
+    margin-right: 1rem;
     width: 33.33%
 }
 
@@ -123,7 +131,8 @@
     .info-box {
       margin: 0 auto;
       margin-bottom: 1rem;
-      width: 100%;
+      width: 90%;
+      padding: 0;
     }
   }
 
