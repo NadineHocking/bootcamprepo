@@ -2,11 +2,32 @@
   --bg-color: radial-gradient(50% 50% at 50% 50%, rgba(237, 215, 255, 0.60) 8%, rgba(224, 224, 255, 0.60) 46.5%, rgba(200, 202, 255, 0.60) 93.5%);
   --btn-primary-outline-bg: 1px solid #000000;
   --btn-primary-bg:#000000;
+  --btn-text:#ffffff;
+  --btn-text-hover:#000000;
+  --footer-text: #ffffff;
   --text-color: #000000;
   --footer-text: #ffffff;
   --box-bg: rgba(255, 255, 255, 0.3);
-  --box-outline: 1px solid white;
+  --box-outline: 1px solid #ffffff;
+  --box-text:  #000000;
   --footer-bg: #000000;
+  --logo-color: #000000;
+}
+
+/* Dark mode variables */
+.dark-mode {
+  --bg-color: #19191B;;
+  --btn-primary-outline-bg: 1px solid #ffffff;
+  --btn-primary-bg:#ffffff;
+  --btn-text:#000000;
+  --btn-text-hover:#ffffff;
+  --text-color: #ffffff;
+  --footer-text: #000000;
+  --box-bg: rgba(255, 255, 255, 0.1);
+  --box-outline: 1px solid rgba(255, 255, 255, 0.1);
+  --box-text:  #ffffff;
+  --footer-bg: #ffffff;
+  --logo-color: #ffffff;
 }
 
 body {
@@ -40,15 +61,18 @@ body {
   .intro-text {
     font-size: 1.2rem;
     line-height: 1.6rem;
+    color: var(--text-color);
   }
 
   h1 {
     font-size: 2.5rem;
+    color: var(--text-color);
   }
 
   .info-box h2 {
       text-align: center;
       font-size: 1.4rem;
+      color: var(--text-color);
     }
 
   .footer-text {
@@ -104,9 +128,15 @@ body {
   
     .btn .material-icons {
       font-size: 16px;
-      margin: 0 0 0 4px
+      margin: 0 0 0 4px;
+      fill: var(--btn-text);
     }
   
+    /* Images */
+
+    .logo {
+      fill: var(--logo-color);
+    }
 
   /* Lists */
 
@@ -178,7 +208,8 @@ footer {
     border-radius: 30px;
     padding: 20px;
     margin-right: 1rem;
-    width: 33.33%
+    width: 33.33%;
+    color: var(--box-text)
 }
 
 @media (max-width: 768px) {
@@ -220,8 +251,8 @@ header {
 
 .btn {
     background-color: var(--btn-primary-bg); 
-    color: white;
-    border: 1px solid #000000;
+    color: var(--btn-text);
+    border: 1px solid var(--btn-primary-bg);
     margin-left: 1rem;
     border-radius: 50px;
 	  padding: 8px 12px 8px 12px;
@@ -232,8 +263,9 @@ header {
 }
 
 .btn:hover {
-    background-color: var( --btn-primary-outline-bg); 
-    color: black;
+    background-color: var(--btn-primary-outline-bg); 
+    border: var(--btn-primary-outline-bg); 
+    color: var(--btn-text-hover);
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
@@ -245,10 +277,3 @@ header {
     display: flex;
     
 }
-
-/* @media (max-width: 768px) {
-   .d-flex {
-    display: block;
-   }
-  } */
-
