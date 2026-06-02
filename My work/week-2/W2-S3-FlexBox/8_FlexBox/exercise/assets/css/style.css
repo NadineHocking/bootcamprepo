@@ -8,14 +8,16 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #333; 
     color: white;
     padding: 20px 0;
 }
 
 /* Flexbox navigation */
 .navbar {
-    /* TODO: explain the purpose of the following properties */
+    /* TODO: explain the purpose of the following properties 
+    Display flex and justify-content are flexbox properties that allow the navigation items to display centred and equally distanced in the navigation section.
+    */
     display: flex;
 
     justify-content: center;
@@ -38,7 +40,11 @@ header {
 /* Flexbox content area */
 .content {
     
-    /* TODO: explain the purpose of the following properties */
+    /* TODO: explain the purpose of the following properties 
+    Display flex, flex-wrap and justify-content: space-around are flex-box properties that control the positioning of the content items, allowing even spacing and automatic wrapping to next the line for responsivness.
+    Align items: center, aligns flex items on center of page
+     
+    */
     flex-wrap: wrap;
     display: flex;
 
