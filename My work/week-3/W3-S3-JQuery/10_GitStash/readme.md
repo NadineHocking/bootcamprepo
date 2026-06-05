@@ -35,7 +35,7 @@ As a developer, I want to temporarily save my work using `git stash` so that I c
    - Create a new directory and initialize it as a Git repository.
    ```bash
    mkdir git-stash-exercise
-   cd git-stash-exercise
+   cd git-stash-exerciseo
    git init
    ```
 2. **Add and commit some initial files:**

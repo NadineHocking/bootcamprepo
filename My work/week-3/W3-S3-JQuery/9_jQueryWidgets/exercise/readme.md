@@ -4,7 +4,7 @@
 
 Using the provided `index.html` file as a starting point, your task is to add at least **two additional widgets** from the jQuery UI library to your page to enhance its functionality. You can explore a complete list of widgets along with code samples on the [jQuery UI website](https://jqueryui.com/).
 
-## Key Learnings
+## Key Learnings 
 
 By completing this exercise, you will:
 

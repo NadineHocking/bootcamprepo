@@ -1,1 +1,33 @@
 /* Custom Styles for overriding Bootstrap colors */
+
+
+.btn {
+    border-radius: 30px;
+    padding: .5rem 1rem;
+}
+
+.btn-primary {
+    background-color: #0091ff;
+}
+
+.btn-secondary {
+    background-color: #000000 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff !important;
+    border-color: black;
+    color: black;
+}
+.bg-secondary {
+
+    background-color: rgb(42, 57, 57) !important;
+}
+
+.text-dark {
+    color: #111111;
+}
+
+@media screen and (min-width: 768px) {
+
+}

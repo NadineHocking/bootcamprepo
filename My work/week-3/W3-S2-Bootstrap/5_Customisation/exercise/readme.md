@@ -41,10 +41,10 @@ As a web developer, I want to customise Bootstrap's default styles to match my p
 1. Use the provided HTML page that uses Bootstrap.
 2. Create a new custom stylesheet (`styles.css`) and link it to the HTML page.
 3. In `styles.css`, override the following Bootstrap classes and elements using custom styles:
-
+ 
 - Header styles
 - `btn-primary` and `btn-secondary`
-- `text-dark`
+- `text-dark` 
 - `bg-secondary`
 
 4. Ensure that your custom styles are applied by using the `!important` directive where necessary.

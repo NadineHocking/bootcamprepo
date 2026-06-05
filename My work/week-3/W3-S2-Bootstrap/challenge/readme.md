@@ -17,7 +17,7 @@ By completing this exercise, you will:
 
 ## User Story
 
-As a developer, I want to evaluate how Bootstrap components and utilities can replace custom solutions in my previously developed responsive website to improve efficiency and maintainability.
+As a developer, I want to evaluate how Bootstrap components and utilities can replace custom solutions in my previously developed responsive website to improve efficiency and maintainability. 
 
 ## Acceptance Criteria
 
