@@ -1,0 +1,279 @@
+:root {
+  --bg-color: radial-gradient(50% 50% at 50% 50%, rgba(237, 215, 255, 0.60) 8%, rgba(224, 224, 255, 0.60) 46.5%, rgba(200, 202, 255, 0.60) 93.5%);
+  --btn-primary-outline-bg: 1px solid #000000;
+  --btn-primary-bg:#000000;
+  --btn-text:#ffffff;
+  --btn-text-hover:#000000;
+  --footer-text: #ffffff;
+  --text-color: #000000;
+  --footer-text: #ffffff;
+  --box-bg: rgba(255, 255, 255, 0.3);
+  --box-outline: 1px solid #ffffff;
+  --box-text:  #000000;
+  --footer-bg: #000000;
+  --logo-color: #000000;
+}
+
+/* Dark mode variables */
+.dark-mode {
+  --bg-color: #19191B;;
+  --btn-primary-outline-bg: 1px solid #ffffff;
+  --btn-primary-bg:#ffffff;
+  --btn-text:#000000;
+  --btn-text-hover:#ffffff;
+  --text-color: #ffffff;
+  --footer-text: #000000;
+  --box-bg: rgba(255, 255, 255, 0.1);
+  --box-outline: 1px solid rgba(255, 255, 255, 0.1);
+  --box-text:  #ffffff;
+  --footer-bg: #ffffff;
+  --logo-color: #ffffff;
+}
+
+body {
+  background: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* @media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+} */
+
+* {
+  font-family: "League Spartan", sans-serif;
+}
+
+
+/* Fonts */
+
+@font-face {
+	font-family: "League Spartan", sans-serif;
+	font-style: normal;
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+	src: url('./assets/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('ttf');
+	font-display: swap;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--text-color);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+  }
+
+  .info-box h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      color: var(--text-color);
+    }
+
+  .footer-text {
+    color: var(--footer-text);
+    text-align: center;
+  }
+
+  .info-box .icon {
+    font-size: 2.4rem; 
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+    /* Icons */
+
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(./assets/icons/MaterialiconsOutlined-Regular.otf) format('otf'),
+        url(./assets/icons/Materialicons-Regular.woff2) format('woff2'),
+        url(./assets/icons/Materialicons-Regular.woff) format('woff'),
+        url(./assets/icons/Materialicons-Regular.ttf) format('truetype');
+    }
+  
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+  
+    .btn .material-icons {
+      font-size: 16px;
+      margin: 0 0 0 4px;
+      fill: var(--btn-text);
+    }
+  
+    /* Images */
+
+    .logo {
+      fill: var(--logo-color);
+    }
+
+  /* Lists */
+
+  .d-list {
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .d-list {
+      text-align: center;
+    }
+  }
+
+
+/* Height and widths */
+
+.vh-100 {
+  height: 100vh;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+/* Containers */
+.container {
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+  }
+}
+
+footer {
+  /* height: 2rem; */
+  position: fixed;
+  background-color: var(--footer-bg);
+  width: 100%;
+  justify-content: center;
+  vertical-align: middle;
+  bottom: 0;
+}
+
+.intro {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin: 2rem 1rem;
+  }  
+}
+
+.info-box {
+    background: var(--box-bg);
+    border: var(--box-outline);
+    border-radius: 30px;
+    padding: 20px;
+    margin-right: 1rem;
+    width: 33.33%;
+    color: var(--box-text)
+}
+
+@media (max-width: 768px) {
+    .info-box {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 90%;
+      padding: 0;
+    }
+  }
+
+  .info-boxes {
+    flex-direction: row;
+  }
+
+@media (max-width: 768px) {
+  .info-boxes {
+    flex-direction: column;
+  }
+  }
+
+.info-box:last-child {
+  margin-right: none;
+}
+
+header {
+    /* display: inline-flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+  header {
+   margin: 1rem;
+  }
+}
+
+
+.btn {
+    background-color: var(--btn-primary-bg); 
+    color: var(--btn-text);
+    border: 1px solid var(--btn-primary-bg);
+    margin-left: 1rem;
+    border-radius: 50px;
+	  padding: 8px 12px 8px 12px;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 1rem; 
+}
+
+.btn:hover {
+    background-color: var(--btn-primary-outline-bg); 
+    border: var(--btn-primary-outline-bg); 
+    color: var(--btn-text-hover);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+/* Alignment */
+
+.d-flex {
+    display: flex;
+    
+}
