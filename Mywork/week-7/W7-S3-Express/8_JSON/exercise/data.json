@@ -1,1 +1,13 @@
-[]
+
+[
+  {
+    "id": 1,
+    "name": "Sample Record One",
+    "description": "This is the first sample record."
+  },
+  {
+    "id": 2,
+    "name": "Sample Record Two",
+    "description": "This is the second sample record."
+  }
+]

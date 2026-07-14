@@ -11,7 +11,7 @@ In this exercise, you are given a module called `accounting.js` that contains se
 - Debugging and fixing code based on test cases
 - Ensuring code meets predefined requirements
 
-## User Story
+## User Story 
 
 As a developer, I want to understand how to fix code by reviewing test cases so that I can write software that meets the expected functionality and passes all tests.
 

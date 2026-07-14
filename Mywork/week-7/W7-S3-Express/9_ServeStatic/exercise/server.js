@@ -2,7 +2,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const { v4: uuidv4 } = require("uuid");
+const { v4: uuidv4 } = require("uuid"); 
 
 // Create an instance of an Express application
 const app = express();
@@ -14,6 +14,9 @@ const PORT = 3001;
 app.use(express.json());
 
 // TODO:  Serve static files from the 'public' directory
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Define the path to the JSON file
 const dataFilePath = path.join(__dirname, "data.json");
@@ -33,6 +36,9 @@ const writeData = (data) => {
 };
 
 // TODO: Handle GET request at the root route
+  app.get('/api/data', (req, res) => {
+     res.json({ message: 'This is your API data' });
+   });
 
 // Handle GET request to retrieve stored data
 app.get("/data", (req, res) => {

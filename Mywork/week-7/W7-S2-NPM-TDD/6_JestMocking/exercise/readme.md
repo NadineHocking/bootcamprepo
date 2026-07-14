@@ -8,7 +8,7 @@ In this exercise, you are provided with a module that retrieves a list of GitHub
 npm run start
 ```
 
-To run the tests
+To run the tests 
 
 ```bash
 npm test

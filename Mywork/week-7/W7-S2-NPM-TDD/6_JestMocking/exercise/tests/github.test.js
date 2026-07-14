@@ -3,8 +3,9 @@ const axios = require("axios");
 const { getUserRepos } = require("../github");
 
 // TODO: what's the difference between jest.mock and jest.spyOn?
+//The core difference is that jest.mock replaces an entire module with a fake version, whereas jest.spyOn wraps an existing object method to track calls while keeping the original behavior intact (unless you explicitly override it).
 // Mock Axios
-jest.mock("axios");
+jest.mock("axios"); 
 
 describe("getUserRepos", () => {
   test("should return the list of repos for a valid user", async () => {

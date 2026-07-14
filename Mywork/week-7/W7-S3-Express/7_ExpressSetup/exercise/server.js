@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 // Handle POST request at the /echo route
 app.post("/echo", (req, res) => {
   // Respond with the same data that was received in the request body
+      message: 'Echo received!',
   res.json({ received: req.body });
 });
 

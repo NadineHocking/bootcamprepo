@@ -16,7 +16,7 @@ Your task is to extend this backend by implementing:
 - `DELETE /data/:id` – Delete a record from the JSON file.
 
 By completing this exercise, you will achieve full CRUD functionality (Create, Read, Update, Delete) in an Express application.
-
+ 
 ---
 
 ## Key Learnings
@@ -28,7 +28,7 @@ By completing this exercise, you will achieve full CRUD functionality (Create, R
 
 ---
 
-## User Story
+## User Story 
 
 As a developer,  
 I want to build a RESTful API that performs CRUD operations on a JSON file,  
